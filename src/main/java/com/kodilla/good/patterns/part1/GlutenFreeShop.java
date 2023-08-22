@@ -7,7 +7,7 @@ import java.util.Set;
 public class GlutenFreeShop implements Producer {
     @Override
     public boolean process(Order order) {
-        System.out.println("Processing order for GlutenFreeShop...");
+        System.out.println("Processing order for GlutenFreeShop..");
 
         boolean isAvailable = checkProductAvailability(order.getProduct());
         if (isAvailable) {
