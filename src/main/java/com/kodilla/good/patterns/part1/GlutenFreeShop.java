@@ -9,7 +9,6 @@ public class GlutenFreeShop implements Producer {
     public boolean process(Order order) {
         System.out.println("Processing order for GlutenFreeShop...");
 
-        // Simulate order processing logic
         boolean isAvailable = checkProductAvailability(order.getProduct());
         if (isAvailable) {
             System.out.println("Order successfully processed by GlutenFreeShop");
